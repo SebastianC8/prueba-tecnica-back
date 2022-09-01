@@ -40,6 +40,13 @@ class LoginController extends Controller
         }
     }
 
+    /**
+     * Función encargada de realizar el registro de un usuario
+     * 
+     * @param Request $request -> información de la petición
+     * 
+     * @return JSON
+     */
     public function registro(Request $request)
     {
         try {
