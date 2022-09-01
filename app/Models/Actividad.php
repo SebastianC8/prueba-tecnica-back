@@ -20,4 +20,10 @@ class Actividad extends Model
 
     /** Deshabilitar timestamps */
     public $timestamps = false;
+
+    /** Relación de uno a muchos: Una actividad puede tener muchos tiempos */
+    public function tiempos()
+    {
+        return $this->hasMany('App\Models\Tiempo');
+    }
 }
