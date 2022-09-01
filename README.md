@@ -73,3 +73,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # Instalaciones necesarias
 ## `PHP:` versión ^7.3.
 ## `Laravel:` versión ^8.75.
+
+# Nota
+El archivo `bd.sql` contiene el script para la creación de la base de datos y las respectivas tablas.
