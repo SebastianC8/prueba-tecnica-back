@@ -39,4 +39,30 @@ class LoginController extends Controller
             return response()->json(['status' => false, 'response' => $th->getMessage()]);
         }
     }
+
+    public function registro(Request $request)
+    {
+        try {
+
+            $response = array();
+            $usuario = new Usuario();
+
+            $usuario->id = $request->identificacion;
+            $usuario->usuario = $request->usuario;
+            $usuario->contraseña = $request->contraseña;
+            $save = $usuario->save();
+    
+            if ($save) {
+                $response = array('status' => true, 'response' => 'Usuario registrado correctamente');
+            } else {
+                $response = array('status' => true, 'response' => 'No se pudo registrar el usuario');
+            }
+    
+            return response()->json($response);
+        } catch (\Throwable $th) {
+            return response()->json(['status' => false, 'response' => $th->getMessage()]);
+        }
+
+
+    }
 }

@@ -22,6 +22,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 /** Inicio de sesión */
 Route::post('/login', [LoginController::class, 'login']);
 
+/** Registro de usuario */
+Route::post('/registro', [LoginController::class, 'registro']);
+
 /** Listar actividades */
 Route::get('/getActividades/{idUser}', [ActividadesController::class, 'getActividades']);
 
