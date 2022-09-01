@@ -71,4 +71,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 4. Ejecutar el comando `php artisan serve --host=localhost --port=8000` ó `npm start` para levantar el servidor. El proyecto correrá en la siguiente url: http://localhost:8000
 
 # Instalaciones necesarias
+## `PHP:` versión ^7.3.
 ## `Laravel:` versión ^8.75.
