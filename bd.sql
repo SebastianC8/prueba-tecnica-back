@@ -7,7 +7,7 @@ USE gestion_empleados;
 CREATE TABLE `usuarios` (
     `id` INT(11) NOT NULL PRIMARY KEY,
     `usuario` VARCHAR(20) NOT NULL,
-    `contraseña` VARCHAR(10) NOT NULL,
+    `contraseña` VARCHAR(10) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 /** Tabla actividades **/
